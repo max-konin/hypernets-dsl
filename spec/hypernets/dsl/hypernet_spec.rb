@@ -13,7 +13,7 @@ RSpec.describe Hypernets::Dsl::Hypernet do
   describe '#graphs' do
     subject { Hypernets::Dsl::Hypernet.find(1).graphs }
 
-    it 'returns all graph in hypernet' do
+    it 'returns all graph  in hypernet' do
       expect(subject.map {|n| n.attributes}).to eq [{'id' => 1, 'name' => 'G1'}]
     end
   end
